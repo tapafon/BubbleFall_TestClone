@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] public BallSpawner ballSpawner;
+    public bool gameStarted = false;
+    public bool gameOver = false;
+    [SerializeField] private BallSpawner ballSpawner;
+    [SerializeField] private GameObject spawnSupport;
+    [SerializeField] private GameObject regularSupport;
     void Start()
     {
         StartCoroutine(StartNewGame());
@@ -13,7 +17,17 @@ public class GameManager : MonoBehaviour
     IEnumerator StartNewGame()
     {
         ballSpawner.InitialSpawn();
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(5f); //while balls are falling and fixing themselves, just like in lottery
         ballSpawner.enableRegularSpawn = true;
+        spawnSupport.SetActive(false);
+        regularSupport.SetActive(true);
+        gameStarted = true;
+    }
+
+    public void EndGame()
+    {
+        gameOver = true;
+        ballSpawner.enableRegularSpawn = false;
+        ballSpawner.ReleaseBalls();
     }
 }
