@@ -148,8 +148,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+  ballColor: 0
   rigidBody: {fileID: 7050333815913070577}
   deathHeight: -20
+  movementSpeed: 1
+  meshRenderer: {fileID: 7307298457421635046}
+  materials:
+  - {fileID: 2100000, guid: 6995d6f4514e4844ba849198f0eb2fe4, type: 2}
+  - {fileID: 2100000, guid: 2e454980a4287334bb720302b8f4e4bc, type: 2}
+  - {fileID: 2100000, guid: 0fe256afb53c4784f8672a065426c0d0, type: 2}
+  - {fileID: 2100000, guid: 16167c1b8a6beef41b2b052106b1cce0, type: 2}
+  - {fileID: 2100000, guid: 913a71276eeb3a646b6bf266ebd9f2ed, type: 2}
+  - {fileID: 2100000, guid: 131e8aac00f2bf540b13999c01d334c3, type: 2}
 --- !u!135 &345807338439682350
 SphereCollider:
   m_ObjectHideFlags: 0

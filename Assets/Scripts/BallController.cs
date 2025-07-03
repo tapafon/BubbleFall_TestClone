@@ -3,19 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class BallController : MonoBehaviour
 {
     [SerializeField] private BallState currentState = BallState.BeforeFixed;
+    [SerializeField] private BallColor ballColor;
     [SerializeField] private Rigidbody rigidBody;
     [SerializeField] private float deathHeight = -20f;
     private float wallEndHeight = 18f;
     [SerializeField] private float movementSpeed = 1f;
+    [SerializeField] private MeshRenderer meshRenderer;
+    [SerializeField] private Material[] materials;
     private GameManager _gameManager;
 
     private void Start()
     {
         _gameManager = FindObjectOfType<GameManager>();
+        SetColor((BallColor)Random.Range(0, 5));
     }
 
     public void FixedUpdate()
@@ -26,6 +31,14 @@ public class BallController : MonoBehaviour
         {
             MoveAlongRamp();
         }
+    }
+
+    BallColor GetColor() { return ballColor; }
+
+    void SetColor(BallColor color)
+    {
+        ballColor = color;
+        meshRenderer.material = materials[(int)color];
     }
 
     void MoveAlongRamp()
@@ -94,6 +107,16 @@ public class BallController : MonoBehaviour
         BeforeFixed,
         Fixed,
         AfterFixed,
+    }
+
+    enum BallColor
+    {
+        Red,
+        Green,
+        Blue,
+        Yellow,
+        Cyan,
+        Pink
     }
 
     IEnumerator DelayedKinematic(float delay = 0.1f)
