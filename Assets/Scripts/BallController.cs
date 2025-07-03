@@ -7,6 +7,13 @@ public class BallController : MonoBehaviour
 {
     [SerializeField] private BallState currentState = BallState.BeforeFixed;
     [SerializeField] private Rigidbody rigidBody;
+    [SerializeField] private float deathHeight = -20f;
+
+    public void FixedUpdate()
+    {
+        if (transform.position.y <= deathHeight)
+            Destroy(this.gameObject);
+    }
 
     public void Fix(float delay = 2f)
     {

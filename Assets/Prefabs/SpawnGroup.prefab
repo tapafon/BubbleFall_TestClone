@@ -1,0 +1,1621 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3806382476085176042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6525496050906226184}
+  - component: {fileID: 8668172193840700104}
+  m_Layer: 0
+  m_Name: SpawnGroup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6525496050906226184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806382476085176042}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4476088190616158773}
+  - {fileID: 7644903081881050895}
+  - {fileID: 2249847939073233072}
+  - {fileID: 479843751931492523}
+  - {fileID: 2363839824865990525}
+  - {fileID: 4803537670118994910}
+  - {fileID: 3949963566076497144}
+  - {fileID: 1975318672736109218}
+  - {fileID: 3084511417805320808}
+  - {fileID: 9154216744770986366}
+  - {fileID: 7401567150154277016}
+  - {fileID: 6433669758169066375}
+  - {fileID: 7547046597702919557}
+  - {fileID: 8350432744912122865}
+  - {fileID: 2896166779058111638}
+  - {fileID: 4659546105565046190}
+  - {fileID: 3198687841099353221}
+  - {fileID: 2222586600201586835}
+  - {fileID: 6160296876572724895}
+  - {fileID: 7680283516040009780}
+  - {fileID: 3062872268325716655}
+  - {fileID: 566456364522623351}
+  - {fileID: 4044553101124398851}
+  - {fileID: 6710006427655939129}
+  - {fileID: 2503555482336632606}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8668172193840700104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3806382476085176042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d43f61cdf76a58b409d5df6863c93d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &223891327974199752
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &6160296876572724895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 223891327974199752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &826434650651278190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &6710006427655939129 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 826434650651278190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1093902099956544720
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &6433669758169066375 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 1093902099956544720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1499477310406388873
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &4803537670118994910 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 1499477310406388873}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1642871420321266425
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &4659546105565046190 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 1642871420321266425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2703317502412680358
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &8350432744912122865 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 2703317502412680358}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2985008060505816617
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &9154216744770986366 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 2985008060505816617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3517602401475690447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &7401567150154277016 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 3517602401475690447}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4359071563667898456
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &7644903081881050895 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 4359071563667898456}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4391985516153390947
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &7680283516040009780 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 4391985516153390947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4529161356494420690
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &7547046597702919557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 4529161356494420690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5241794246975854532
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &2222586600201586835 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 5241794246975854532}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5287153820373831655
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &2249847939073233072 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 5287153820373831655}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5552678276545142261
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &1975318672736109218 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 5552678276545142261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5822611147679901692
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &479843751931492523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 5822611147679901692}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5889260990947708448
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &566456364522623351 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 5889260990947708448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6969241583335510959
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &3949963566076497144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 6969241583335510959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7528027201013210466
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &4476088190616158773 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 7528027201013210466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7946475343682531412
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &4044553101124398851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 7946475343682531412}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8419695929976258633
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &2503555482336632606 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 8419695929976258633}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8550265789598304298
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &2363839824865990525 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 8550265789598304298}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8791777440062444498
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &3198687841099353221 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 8791777440062444498}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8982654230092164415
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &3084511417805320808 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 8982654230092164415}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9000211572577181176
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &3062872268325716655 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 9000211572577181176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9104007901666237377
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6525496050906226184}
+    m_Modifications:
+    - target: {fileID: 1745568617287066788, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_Name
+      value: Marble Ball (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+--- !u!4 &2896166779058111638 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6225855558027681623, guid: bf141c18ca42779449774edf96651fb7, type: 3}
+  m_PrefabInstance: {fileID: 9104007901666237377}
+  m_PrefabAsset: {fileID: 0}
