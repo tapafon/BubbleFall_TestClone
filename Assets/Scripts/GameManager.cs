@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public bool gameStarted = false;
     public bool gameOver = false;
+    public ulong nextID = 0;
     [SerializeField] private BallSpawner ballSpawner;
     [SerializeField] private GameObject spawnSupport;
     [SerializeField] private GameObject regularSupport;
