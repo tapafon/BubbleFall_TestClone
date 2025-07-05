@@ -8,7 +8,6 @@ using Random = UnityEngine.Random;
 
 public class BallController : MonoBehaviour
 {
-    public ulong ID;
     [SerializeField] private BallState currentState = BallState.BeforeFixed;
     [SerializeField] private BallColor ballColor;
     [SerializeField] private Rigidbody rigidBody;
@@ -28,19 +27,16 @@ public class BallController : MonoBehaviour
     {
         _gameManager = FindObjectOfType<GameManager>();
         SetColor((BallColor)Random.Range(0, 5));
-        ID = _gameManager.nextID++;
+        name = $"{_gameManager.nextID++}";
     }
 
     public void FixedUpdate()
     {
         if (transform.position.y <= deathHeight)
             Destroy(this.gameObject);
-        if (_gameManager.gameStarted && !_gameManager.gameOver && IsFixed())
-        {
-            MoveAlongRamp();
-            ReleaseMyselfAndNeighbours();
-        }
+        if (_gameManager.gameStarted && !_gameManager.gameOver && IsFixed()) MoveAlongRamp();
         if (_isDoneTriggerStay) _neighbours.Clear();
+        StartCoroutine(DelayedClear());
     }
 
     void ReleaseMyselfAndNeighbours()
@@ -90,6 +86,11 @@ public class BallController : MonoBehaviour
     public bool IsFixed()
     {
         return currentState == BallState.Fixed && rigidBody.isKinematic;
+    }
+
+    public bool IsReleased()
+    {
+        return currentState == BallState.AfterFixed;
     }
 
     public void PrepareLaunch()
@@ -144,9 +145,8 @@ public class BallController : MonoBehaviour
         var ball = other.gameObject.GetComponent<BallController>();
         if (ball)
         {
-            if (_neighbours.Contains(ball)) return; //to prevent duplicating of same neighbours
             FixAnyNeighbour(ball);
-            if (ball.GetColor()==ballColor)
+            if (ball.GetColor()==ballColor && !_neighbours.Contains(ball))
             {
                 _neighbours.Add(ball);
             }
@@ -154,14 +154,29 @@ public class BallController : MonoBehaviour
         if (!originallyFalse) _isDoneTriggerStay = true;
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        var ball = other.gameObject.GetComponent<BallController>();
+        if (ball)
+        {
+            if (_neighbours.Contains(ball)) _neighbours.Remove(ball);
+        }
+    }
+
     public List<BallController> GetNeighbours(List<BallController> visited = null)
     {
         var tempNeighbours = _neighbours;
         if (visited == null) visited = new List<BallController>();
         visited.Add(this);
+        tempNeighbours.Add(this);
         foreach (BallController neighbour in tempNeighbours.ToList())
         {
             if (visited.Contains(neighbour)) continue;
+            if (!neighbour || neighbour.IsReleased())
+            {
+                if (tempNeighbours.Contains(neighbour)) tempNeighbours.Remove(neighbour);
+                continue;
+            }
             var temp = neighbour.GetNeighbours(visited);
             foreach (var t in temp)
             {
@@ -169,12 +184,12 @@ public class BallController : MonoBehaviour
                 tempNeighbours.Add(t);
             }
         }
-        // string msg = "From " + ID.ToString() + ": ";
-        // foreach (BallController neighbour in tempNeighbours)
-        // {
-        //      msg += neighbour.ID.ToString() + ", ";
-        // }
-        // Debug.Log(msg);
+        string msg = "From " + name + ": ";
+        foreach (BallController neighbour in tempNeighbours)
+        {
+             msg += neighbour.name + ", ";
+        }
+        Debug.Log(msg);
         return tempNeighbours;
     }
 
@@ -222,5 +237,13 @@ public class BallController : MonoBehaviour
         else hitDirection = Vector3.back + Vector3.up; //to push against vertical wall
         if (velocity < movementSpeed + 1f)
             rigidBody.AddForce(hitDirection * (launchSpeed * 1.5f), ForceMode.Impulse);
+    }
+
+    IEnumerator DelayedClear()
+    {
+        yield return new WaitForFixedUpdate(); //that executes AFTER OnTriggerXXX
+        if (_gameManager.gameStarted && !_gameManager.gameOver && IsFixed()) ReleaseMyselfAndNeighbours();
+        _neighbours.RemoveAll(ball => !ball);
+        //_neighbours.Clear();
     }
 }
