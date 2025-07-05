@@ -57,7 +57,7 @@ public class BallSpawner : MonoBehaviour
         ulong maxid = 0;
         foreach (var ball in balls)
         {
-            if (!ball.IsFixed()) continue;
+            if (!ball.IsFixed() || !ball.isFromGroup) continue;
             if (ulong.Parse(ball.name)>=maxid)
             {
                 result = ball;
@@ -66,4 +66,5 @@ public class BallSpawner : MonoBehaviour
         }
         return result;
     }
+
 }

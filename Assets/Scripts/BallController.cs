@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 
 public class BallController : MonoBehaviour
 {
+    public bool isFromGroup = false;
     [SerializeField] private BallState currentState = BallState.BeforeFixed;
     [SerializeField] private BallColor ballColor;
     [SerializeField] private Rigidbody rigidBody;
