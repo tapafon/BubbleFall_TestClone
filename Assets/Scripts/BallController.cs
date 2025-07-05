@@ -196,12 +196,12 @@ public class BallController : MonoBehaviour
                 tempNeighbours.Add(t);
             }
         }
-        string msg = "From " + name + ": ";
-        foreach (BallController neighbour in tempNeighbours)
-        {
-             msg += neighbour.name + ", ";
-        }
-        Debug.Log(msg);
+        // string msg = "From " + name + ": ";
+        // foreach (BallController neighbour in tempNeighbours)
+        // {
+        //      msg += neighbour.name + ", ";
+        // }
+        // Debug.Log(msg);
         return tempNeighbours;
     }
 
