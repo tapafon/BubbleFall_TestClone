@@ -12,10 +12,7 @@ public class LimitingLine : MonoBehaviour
         var ball = other.gameObject.GetComponent<BallController>();
         if (ball)
         {
-            if (ball.IsFixed())
-            {
-                gameManager.EndGame();
-            }
+            if (ball.IsFixed()) gameManager.EndGame();
         }
     }
 }

@@ -35,7 +35,7 @@ public class BallSpawner : MonoBehaviour
         var balls = GetComponentsInChildren<BallController>();
         foreach (var ball in balls)
         {
-            ball.Release();
+            ball.Release(true);
         }
     }
 

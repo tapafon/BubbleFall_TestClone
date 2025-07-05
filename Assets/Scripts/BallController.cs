@@ -126,10 +126,11 @@ public class BallController : MonoBehaviour
         sphereTrigger.radius = 0.6f;
     }
 
-    public void Release()
+    public void Release(bool force = false)
     {
-        if (currentState != BallState.Fixed) return;
+        if (currentState != BallState.Fixed && !force) return;
         currentState = BallState.AfterFixed;
+        if (_gameManager.gameStarted && !_gameManager.gameOver) _gameManager.score += 10;
         _neighbours.Clear();
         _allNeighbours.Clear();
         sphereTrigger.enabled = false;

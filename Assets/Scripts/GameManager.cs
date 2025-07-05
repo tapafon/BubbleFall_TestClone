@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,9 +9,12 @@ public class GameManager : MonoBehaviour
     public bool gameStarted = false;
     public bool gameOver = false;
     public ulong nextID = 0;
+    public ulong score = 0;
     [SerializeField] private BallSpawner ballSpawner;
+    [SerializeField] private BallLauncher ballLauncher;
     [SerializeField] private GameObject spawnSupport;
     [SerializeField] private GameObject regularSupport;
+    [SerializeField] private TextMeshProUGUI scoreText;
 
     private void Awake()
     {
@@ -21,6 +25,11 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(StartNewGame());
+    }
+
+    void Update()
+    {
+        scoreText.text = $"Score: {score}";
     }
 
     IEnumerator StartNewGame()
@@ -38,5 +47,6 @@ public class GameManager : MonoBehaviour
         gameOver = true;
         ballSpawner.enableRegularSpawn = false;
         ballSpawner.ReleaseBalls();
+        ballLauncher.GetComponentInChildren<BallController>().Release(true);
     }
 }
