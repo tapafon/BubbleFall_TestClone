@@ -117,7 +117,7 @@ public class BallController : MonoBehaviour
     public void Fix(float delay = 2f)
     {
         if (currentState != BallState.BeforeFixed) return;
-        if (_wasLaunched) delay = 0.1f;
+        if (_wasLaunched) delay = 0.05f;
         currentState = BallState.Fixed;
         rigidBody.velocity = Vector3.zero;
         rigidBody.drag = 2f;
