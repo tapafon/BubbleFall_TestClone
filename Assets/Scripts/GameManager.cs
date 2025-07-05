@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private BallSpawner ballSpawner;
     [SerializeField] private GameObject spawnSupport;
     [SerializeField] private GameObject regularSupport;
+
+    private void Awake()
+    {
+        QualitySettings.vSyncCount = 0;
+        Application.targetFrameRate = 120;
+    }
+
     void Start()
     {
         StartCoroutine(StartNewGame());

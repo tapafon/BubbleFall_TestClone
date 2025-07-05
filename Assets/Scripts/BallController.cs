@@ -232,7 +232,7 @@ public class BallController : MonoBehaviour
 
     IEnumerator DelayedKinematic(float delay = 0.1f)
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSecondsRealtime(delay);
         if (currentState == BallState.Fixed)
         {
             rigidBody.isKinematic = true;
