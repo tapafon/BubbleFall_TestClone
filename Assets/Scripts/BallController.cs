@@ -56,7 +56,7 @@ public class BallController : MonoBehaviour
         _wasLaunched = false;
     }
 
-    void SetColor(BallColor color)
+    public void SetColor(BallColor color)
     {
         ballColor = color;
         meshRenderer.material = materials[(int)color];
@@ -264,8 +264,9 @@ public class BallController : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(1f);
-            yield return new WaitForFixedUpdate();
-            if (_ballSpawner.isCurrentlyDroppingIsolatedBalls) continue;
+            yield return new WaitForFixedUpdate(); //that executes AFTER OnTriggerXXX
+            if (_wasLaunched) continue; //that executes AFTER ReleaseMyselfAndNeighbours
+            if (_ballSpawner.isCurrentlyDroppingIsolatedBalls) continue; //that executes AFTER DropIsolatedBallIslands
             _neighbours.Clear();
             _allNeighbours.Clear();
             if (_gameManager.gameOver) break;
