@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BallSpawner : MonoBehaviour
 {
     public bool enableRegularSpawn = false;
+    public bool isCurrentlyDroppingIsolatedBalls = false;
     [SerializeField] private GameObject ballGroup;
     [SerializeField] private Transform initialSpawnPoint;
     [SerializeField] private Transform regularSpawnPoint;
@@ -35,5 +37,33 @@ public class BallSpawner : MonoBehaviour
         {
             ball.Release();
         }
+    }
+
+    public void DropIsolatedBallIslands()
+    {
+        isCurrentlyDroppingIsolatedBalls = true;
+        var balls = GetComponentsInChildren<BallController>().ToList();
+        var fixedOnTop = GetMostRecentFixedBall(balls).GetNeighbours(true);
+        foreach (var ball in balls)
+        {
+            if (!fixedOnTop.Contains(ball)) ball.Release();
+        }
+        isCurrentlyDroppingIsolatedBalls = false;
+    }
+
+    BallController GetMostRecentFixedBall(List<BallController> balls)
+    {
+        BallController result = null;
+        ulong maxid = 0;
+        foreach (var ball in balls)
+        {
+            if (!ball.IsFixed()) continue;
+            if (ulong.Parse(ball.name)>=maxid)
+            {
+                result = ball;
+                maxid = ulong.Parse(ball.name);
+            }
+        }
+        return result;
     }
 }

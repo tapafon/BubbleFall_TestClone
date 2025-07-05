@@ -19,15 +19,18 @@ public class BallController : MonoBehaviour
     [SerializeField] private SphereCollider sphereTrigger;
     [SerializeField] private Material[] materials;
     private List<BallController> _neighbours = new List<BallController>();
+    private List<BallController> _allNeighbours = new List<BallController>();
     private GameManager _gameManager;
+    private BallSpawner _ballSpawner;
     private bool _wasLaunched = false;
-    private bool _isDoneTriggerStay = true;
 
     private void Start()
     {
         _gameManager = FindObjectOfType<GameManager>();
+        _ballSpawner = FindObjectOfType<BallSpawner>();
         SetColor((BallColor)Random.Range(0, 5));
         name = $"{_gameManager.nextID++}";
+        StartCoroutine(ScheduledPurge());
     }
 
     public void FixedUpdate()
@@ -35,7 +38,6 @@ public class BallController : MonoBehaviour
         if (transform.position.y <= deathHeight)
             Destroy(this.gameObject);
         if (_gameManager.gameStarted && !_gameManager.gameOver && IsFixed()) MoveAlongRamp();
-        if (_isDoneTriggerStay) _neighbours.Clear();
         StartCoroutine(DelayedClear());
     }
 
@@ -48,9 +50,10 @@ public class BallController : MonoBehaviour
             _wasLaunched = false;
             return;
         }
-
-        foreach (BallController neighbour in neighbours) neighbour.Release();
+        foreach (BallController neighbour in neighbours.ToList()) neighbour.Release();
         Release();
+        _ballSpawner.DropIsolatedBallIslands();
+        _wasLaunched = false;
     }
 
     void SetColor(BallColor color)
@@ -127,10 +130,19 @@ public class BallController : MonoBehaviour
     {
         if (currentState != BallState.Fixed) return;
         currentState = BallState.AfterFixed;
+        _neighbours.Clear();
+        _allNeighbours.Clear();
+        sphereTrigger.enabled = false;
         rigidBody.drag = 0f;
         rigidBody.angularDrag = 0.05f;
         rigidBody.isKinematic = false;
         StartCoroutine(Unstuck());
+    }
+
+    private void OnDestroy()
+    {
+        _neighbours.Clear();
+        _allNeighbours.Clear();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -140,8 +152,6 @@ public class BallController : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        var originallyFalse = !_isDoneTriggerStay;
-        _isDoneTriggerStay = false;
         var ball = other.gameObject.GetComponent<BallController>();
         if (ball)
         {
@@ -150,8 +160,8 @@ public class BallController : MonoBehaviour
             {
                 _neighbours.Add(ball);
             }
+            if (!_allNeighbours.Contains(ball)) _allNeighbours.Add(ball);
         }
-        if (!originallyFalse) _isDoneTriggerStay = true;
     }
 
     private void OnTriggerExit(Collider other)
@@ -160,12 +170,14 @@ public class BallController : MonoBehaviour
         if (ball)
         {
             if (_neighbours.Contains(ball)) _neighbours.Remove(ball);
+            if (_allNeighbours.Contains(ball)) _allNeighbours.Remove(ball);
         }
     }
 
-    public List<BallController> GetNeighbours(List<BallController> visited = null)
+    public List<BallController> GetNeighbours(bool all = false, List<BallController> visited = null)
     {
         var tempNeighbours = _neighbours;
+        if (all) tempNeighbours = _allNeighbours;
         if (visited == null) visited = new List<BallController>();
         visited.Add(this);
         tempNeighbours.Add(this);
@@ -177,7 +189,7 @@ public class BallController : MonoBehaviour
                 if (tempNeighbours.Contains(neighbour)) tempNeighbours.Remove(neighbour);
                 continue;
             }
-            var temp = neighbour.GetNeighbours(visited);
+            var temp = neighbour.GetNeighbours(all, visited);
             foreach (var t in temp)
             {
                 if (tempNeighbours.Contains(t)) continue; //to prevent duplicating of same neighbours
@@ -243,7 +255,20 @@ public class BallController : MonoBehaviour
     {
         yield return new WaitForFixedUpdate(); //that executes AFTER OnTriggerXXX
         if (_gameManager.gameStarted && !_gameManager.gameOver && IsFixed()) ReleaseMyselfAndNeighbours();
-        _neighbours.RemoveAll(ball => !ball);
-        //_neighbours.Clear();
+        _neighbours.RemoveAll(ball => !ball); //removes non-existent balls
+        _allNeighbours.RemoveAll(ball => !ball); //removes non-existent balls
+    }
+
+    IEnumerator ScheduledPurge()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1f);
+            yield return new WaitForFixedUpdate();
+            if (_ballSpawner.isCurrentlyDroppingIsolatedBalls) continue;
+            _neighbours.Clear();
+            _allNeighbours.Clear();
+            if (_gameManager.gameOver) break;
+        }
     }
 }
