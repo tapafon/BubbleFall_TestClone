@@ -99,7 +99,7 @@ public class GameManager : MonoBehaviour
     IEnumerator StartNewGame()
     {
         ballSpawner.InitialSpawn();
-        yield return new WaitForSecondsRealtime(5f/_gameSpeed); //while balls are falling and fixing themselves, just like in lottery
+        yield return new WaitForSeconds(5f); //while balls are falling and fixing themselves, just like in lottery
         ballSpawner.enableRegularSpawn = true;
         spawnSupport.SetActive(false);
         regularSupport.SetActive(true);
