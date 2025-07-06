@@ -11,8 +11,8 @@ public class SpeedTrigger : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (_currentBalls == 0) gameManager.movementSpeed = 1f;
-        else gameManager.movementSpeed = 0.1f;
+        if (_currentBalls == 0) gameManager.movementSpeed = 2f;
+        else gameManager.movementSpeed = 0.25f;
         _currentBalls = 0; //OnTriggerStay is checked every FixedUpdate
 
     }

@@ -21,7 +21,7 @@ public class BallLauncher : MonoBehaviour
 
     void Update()
     {
-        if (_gameManager.gameStarted && !_gameManager.gameOver) foreach (Touch touch in Touch.activeTouches)
+        if (_gameManager.gameStarted && !_gameManager.gameOver && !_gameManager.gamePaused) foreach (Touch touch in Touch.activeTouches)
         {
             if (touch.phase == TouchPhase.Ended)
             {
@@ -44,6 +44,6 @@ public class BallLauncher : MonoBehaviour
     IEnumerator SpawnNewBall()
     {
         yield return new WaitForSeconds(0.2f);
-        Instantiate(ballPrefab, transform.position, Quaternion.identity, transform);
+        if (!_gameManager.gameOver) Instantiate(ballPrefab, transform.position, Quaternion.identity, transform);
     }
 }

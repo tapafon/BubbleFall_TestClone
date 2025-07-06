@@ -147,12 +147,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b897724d28aa8e459136aa69aedaf2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFromGroup: 0
   currentState: 0
   ballColor: 0
   rigidBody: {fileID: 7050333815913070577}
   deathHeight: -20
   movementSpeed: 0.1
-  launchSpeed: 15
+  launchSpeed: 30
   meshRenderer: {fileID: 7307298457421635046}
   sphereTrigger: {fileID: 345807338439682350}
   materials:
