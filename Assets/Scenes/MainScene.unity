@@ -4896,6 +4896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1286874861}
   - component: {fileID: 1286874862}
+  - component: {fileID: 1286874863}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4944,6 +4945,36 @@ MonoBehaviour:
   pauseMenu: {fileID: 736171649}
   speedText: {fileID: 671186473}
   gameOverScreen: {fileID: 1545449150}
+--- !u!114 &1286874863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286874860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 48e264f66bdcb2943a97c63368698adb, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &1287886453
 GameObject:
   m_ObjectHideFlags: 0

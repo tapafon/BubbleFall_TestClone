@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     {
         var fps = (int)(1f / (Time.smoothDeltaTime / _gameSpeed));
         scoreText.text = $"Score: {score}\n{fps} FPS";
+        if (Input.GetKey(KeyCode.Escape)) OnBack();
     }
 
     public void TogglePause()
@@ -85,6 +86,12 @@ public class GameManager : MonoBehaviour
                 break;
         }
         speedText.text = $"{_currentGameSpeed} speed";
+    }
+
+    public void OnBack()
+    {
+        if (!gameOver && !gamePaused) TogglePause();
+        else QuitGame();
     }
 
     public void QuitGame()
