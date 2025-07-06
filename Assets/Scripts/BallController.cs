@@ -14,7 +14,7 @@ public class BallController : MonoBehaviour
     [SerializeField] private Rigidbody rigidBody;
     [SerializeField] private float deathHeight = -20f;
     private float wallEndHeight = 18f;
-    [SerializeField] private float movementSpeed = 1f;
+    [SerializeField] private float movementSpeed = 1f; //if I touch this, ball spawn will break because of how buggy 2022.3.22f1 is
     [SerializeField] private float launchSpeed = 3f;
     [SerializeField] private MeshRenderer meshRenderer;
     [SerializeField] private SphereCollider sphereTrigger;
@@ -83,7 +83,8 @@ public class BallController : MonoBehaviour
             Vector3 surfaceNormal = hit.normal;
             Vector3 direction = hit.point - transform.position;
             Vector3 slope = Vector3.ProjectOnPlane(direction, surfaceNormal).normalized;
-            transform.position += slope * (movementSpeed * Time.deltaTime);
+            rigidBody.MovePosition(transform.position + slope * (_gameManager.movementSpeed * Time.deltaTime));
+            //transform.position += slope * (_gameManager.movementSpeed * Time.deltaTime);
         }
     }
 
@@ -249,7 +250,7 @@ public class BallController : MonoBehaviour
         Vector3 hitDirection;
         if (transform.position.y < wallEndHeight) hitDirection = Vector3.up;
         else hitDirection = Vector3.back + Vector3.up; //to push against vertical wall
-        if (velocity < movementSpeed + 1f)
+        if (velocity < _gameManager.movementSpeed + 1f)
             rigidBody.AddForce(hitDirection * (launchSpeed * 1.5f), ForceMode.Impulse);
     }
 

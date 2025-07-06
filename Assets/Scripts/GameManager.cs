@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public bool gameOver = false;
     public ulong nextID = 0;
     public ulong score = 0;
+    public float movementSpeed = 0.1f;
     [SerializeField] private BallSpawner ballSpawner;
     [SerializeField] private BallLauncher ballLauncher;
     [SerializeField] private GameObject spawnSupport;
