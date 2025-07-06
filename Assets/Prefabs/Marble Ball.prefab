@@ -153,7 +153,7 @@ MonoBehaviour:
   rigidBody: {fileID: 7050333815913070577}
   deathHeight: -20
   movementSpeed: 0.1
-  launchSpeed: 30
+  launchSpeed: 22.5
   meshRenderer: {fileID: 7307298457421635046}
   sphereTrigger: {fileID: 345807338439682350}
   materials:

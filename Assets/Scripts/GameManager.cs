@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private TextMeshProUGUI speedText;
     [SerializeField] private GameObject gameOverScreen;
-    private float _gameSpeed = 0.25f;
-    private GameSpeed _currentGameSpeed = GameSpeed.Quarter;
+    private float _gameSpeed = 1f;
+    private GameSpeed _currentGameSpeed = GameSpeed.Full;
 
     private void Awake()
     {

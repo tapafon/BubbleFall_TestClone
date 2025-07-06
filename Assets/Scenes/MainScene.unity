@@ -3179,7 +3179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quarter speed
+  m_text: Full speed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d144737dd2ccec547a28b93564bfe45f, type: 2}
   m_sharedMaterial: {fileID: 5562177275881456126, guid: d144737dd2ccec547a28b93564bfe45f, type: 2}
